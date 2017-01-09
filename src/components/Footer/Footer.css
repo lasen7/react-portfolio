@@ -1,0 +1,21 @@
+#footer {
+  background: #383b43;
+  padding: 3em;
+  text-align: center;
+}
+
+i.icon {
+  font-size: 2em;
+}
+
+#footer a {
+  color: black;
+}
+
+#footer i.icon {
+  cursor: pointer;
+}
+
+#footer i.icon:hover, #footer i.icon:active {
+  color: #03A9F4;
+}
