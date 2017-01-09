@@ -1,5 +1,7 @@
 
 .icon-video:before { content: '\e800'; } /* '' */
 .icon-food:before { content: '\e801'; } /* '' */
+.icon-na:before { content: '\e802'; } /* '' */
 .icon-swimming:before { content: '\e838'; } /* '' */
+.icon-github-circled-alt2:before { content: '\f056'; } /* '' */
 .icon-gamepad:before { content: '\f11b'; } /* '' */
