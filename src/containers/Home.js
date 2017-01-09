@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Profile, Intro, Skill } from 'components';
+import { Profile, Intro, Skill, Contact } from 'components';
 
 class Home extends Component {
   render() {
@@ -9,6 +9,7 @@ class Home extends Component {
         <Profile />
         <Intro />
         <Skill />
+        <Contact />
       </div>
     );
   }

@@ -1,0 +1,23 @@
+#contact {
+  background: #3cadd4;
+  padding-top: 2em;  
+  padding-bottom: 4em;      
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 3em;
+  padding: 1em 0;
+  color: white;
+}
+
+#contact .container {
+  width: 40em;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  #contact .container {
+    width: 90%;
+  }
+}
