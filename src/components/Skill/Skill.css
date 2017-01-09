@@ -1,0 +1,65 @@
+#skill {
+  margin-top: 2em;
+  background-image: url(../../assets/dark_tint.png);
+  background-position: center center;
+	background-size: cover;
+  padding-top: 2em;  
+  padding-bottom: 4em;
+}
+
+#skill h2 {
+  font-size: 3em;
+  padding: 1em;
+}
+
+.rect {
+  width: 18em;
+  height: 18em;
+  position: relative;
+  display: inline-block;  
+  margin-bottom: -2px;
+}
+
+.rect .wrapper {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rect .rect-top {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+.rect .rect-bottom {
+  font-size: 2em;
+}
+
+.empty {
+  font-size: 1.5em;
+}
+
+.rect-white {
+  background: #E0E0E0;
+}
+
+.rect-blue {
+  background: #82B1FF;
+}
+
+.rect-font-red {
+  color: #C62828;
+}
+
+.rect-font-blue {
+  color: #0D47A1;
+}
+
+@media (max-width: 800px) {
+  #skill h2 {
+    font-size: 2.25em;
+    padding: 1em 1em 1em 0.2em;
+  }
+}
