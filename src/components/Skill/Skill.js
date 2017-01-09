@@ -5,7 +5,7 @@ const Skill = () => {
   return (
     <section id="skill">
       <h2>Skills</h2>
-      <section id="top" className="center">
+      <section id="top">
         <div className="rect rect-white">
           <div className="wrapper">
             <div className="rect-top">Nodejs</div>
@@ -28,7 +28,7 @@ const Skill = () => {
         </div>
       </section>
 
-      <section id="bottom" className="center">
+      <section id="bottom">
         <div className="rect rect-blue">
           <div className="wrapper">
             <div className="rect-top">MySQL</div>

@@ -4,12 +4,13 @@
   background-position: center center;
 	background-size: cover;
   padding-top: 2em;  
-  padding-bottom: 4em;
+  padding-bottom: 4em;      
+  text-align: center;
 }
 
 #skill h2 {
   font-size: 3em;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .rect {
