@@ -43,7 +43,7 @@ const Skill = () => {
           </div>
         </div>
 
-        <div className="rect rect-blue">
+        <div className="rect rect-blue na">
           <div className="wrapper">
             <span className="empty">N/A</span>
           </div>

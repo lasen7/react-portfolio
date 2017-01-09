@@ -47,6 +47,7 @@
 .gallery {
   width: 80%;
   margin:0 auto;
+  padding-bottom: 2em;
 }
 
 .gallery-cell {
@@ -56,7 +57,8 @@
 
 #intro {
   padding-top: 2em;
-  background: #EEE;
+  background: #E0E0E0;
+  padding-bottom: 3em;
 }
 
 #intro h2 {
@@ -131,7 +133,6 @@
 
   #intro h2 {
     font-size: 2.25em;
-    padding: 1em 1em 1em 0.2em;
   }
 
   #intro .intro-left {
