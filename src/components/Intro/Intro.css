@@ -1,0 +1,176 @@
+/* smaller, dark, rounded square */
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #333;
+}
+.flickity-prev-next-button:hover {
+  background: #F90;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -30px;
+}
+.flickity-prev-next-button.next {
+  right: -30px;
+}
+
+.padding-1 {
+  padding: 1em;
+}
+
+.c3 {
+  width: 25%;
+}
+
+.c4 {
+  width: 33.3%
+}
+
+.c6 {
+  width: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
+.gallery {
+  width: 80%;
+  margin:0 auto;
+}
+
+.gallery-cell {
+  width: 100%;  
+  overflow: hidden;
+}
+
+#intro {
+  padding-top: 2em;
+  background: #EEE;
+}
+
+#intro h2 {
+	font-size: 3em;
+  padding: 1em;
+}
+
+#intro #about p {
+  display: inline-block;
+  padding: 0 3em 4em 3em;
+  line-height: 1.3em;
+}
+
+#intro .intro-left {
+  float: left;
+}
+
+#intro .intro-left-img {
+  float: left
+}
+
+#intro h6{
+  font-size: 1.5em;
+  padding-left: 2em;
+}
+
+#intro #experience span, #intro #education span {
+  font-size: 1.5em;
+  padding-left: 2em;
+  color: grey;
+}
+
+#intro #experience p, #intro #education p {
+  display: inline-block;
+  padding: 1em 3em 4em 3em;
+  line-height: 1.3em;
+}
+
+.circle {
+  display: inline-block;
+  background: rgba(106, 123, 152, 0.6);
+  border-radius: 100% 100%;
+  width: 8em;
+  height: 8em;
+  line-height: 8em;
+  text-align: center;  
+}
+
+#intro #hobby i {
+  font-size: 3em;
+  font-weight: normal;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .c3 {
+    width: 50%;
+  }
+
+  .c4 {
+    width: 100%;
+  }
+
+  .c6 {
+    width: 100%;
+  }
+
+  #intro {
+    padding-top: 0;
+  }
+
+  #intro h2 {
+    font-size: 2.25em;
+    padding: 1em 1em 1em 0.2em;
+  }
+
+  #intro .intro-left {
+    float: none;
+  }
+
+  #intro #about p {
+    display: inline-block;
+    padding: 0 0.5em 2em 0.5em;
+    line-height: 1.3em;
+  }
+
+  #intro h6{
+    font-size: 1.5em;
+    padding-left: 0.5em;
+  }
+
+  #intro #experience span, #intro #education span {
+    font-size: 1.5em;
+    padding-left: 0.5em;
+    color: grey;
+  }  
+
+  #intro #experience p, #intro #education p {
+    display: inline-block;
+    padding: 1em 0.5em 2em 0.8em;
+    line-height: 1.3em;
+  }  
+
+  .padding-1 {
+    padding: 1em 1em 5em 1em;
+  }
+
+  .circle {
+    width: 6em;
+    height: 6em;
+    line-height: 6em;
+  }
+
+  #hobby-header {
+    margin-bottom: 1em;
+  }
+}
