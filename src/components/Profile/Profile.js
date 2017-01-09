@@ -1,15 +1,22 @@
 import React from 'react';
 
-import {Header } from 'semantic-ui-react';
-
 import './Profile.css';
 
-const Profile = () => {
+import { injectIntl } from 'react-intl';
+import { prepareMessages } from 'locale/helper';
+
+const messages = prepareMessages({
+  "Profile.welcome": "Hi. This is hspark's blog",
+});
+
+const Profile = ({intl}) => {
+  const formatMessage = intl.formatMessage;
+
   return (
-    <section id="profile">      
-      <h2>Hi. This is hspark's blog</h2>
+    <section id="profile">
+      <h2>{formatMessage(messages.welcome)}</h2>
     </section>
   );
 };
 
-export default Profile;
+export default injectIntl(Profile);

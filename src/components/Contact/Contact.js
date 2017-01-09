@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Input, Button } from 'semantic-ui-react';
+import { Form, Button } from 'semantic-ui-react';
 
 import './Contact.css';
 
