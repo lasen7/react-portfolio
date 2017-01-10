@@ -2,62 +2,90 @@ import React from 'react';
 
 import './Intro.css';
 
-const Intro = () => {
+import { injectIntl } from 'react-intl';
+import { prepareMessages } from 'locale/helper';
+
+const messages = prepareMessages({
+  "Intro.aboutHeader": "ABOUT ME",
+  "Intro.aboutMeLeft": "Hi. I am hspark.",
+  "Intro.aboutMeRight": "I am developer.",
+
+  "Intro.experienceCompany": "Company",
+  "Intro.experienceDate": "2014 - 2016",
+  "Intro.experienceDesc": "First company",
+
+  "Intro.educationName1": "T Academy",
+  "Intro.educationDate1": "2016 - 2016",
+  "Intro.educationDesc1": "Nodejs",
+
+  "Intro.educationName2": "JAVA",
+  "Intro.educationDate2": "2014 - 2014",
+  "Intro.educationDesc2": "Java & Android",
+
+  "Intro.hobby1": "Movie",
+  "Intro.hobby2": "Swimming",
+  "Intro.hobby3": "Game",
+  "Intro.hobby4": "Food",
+});
+
+const Intro = ({intl}) => {
+  const formatMessage = intl.formatMessage;
+
   return (
     <section id="intro">
-      <h2>ABOUT ME</h2>
+      <h2>{formatMessage(messages.aboutHeader)}</h2>
       <div className="gallery js-flickity" data-flickity='{ "autoPlay": 5000, "draggable": false } '>
         <div id="about" className="gallery-cell">
-          
+
           <div className="intro-left c6">
-            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <p>{formatMessage(messages.aboutMeLeft)}</p>
           </div>
           <div className="intro-left c6">
-            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <p>{formatMessage(messages.aboutMeRight)}</p>
           </div>
         </div>
 
         <div id="experience" className="gallery-cell">
           <div className="intro-left c6">
-            <h6>BNF TECHNOLOGY</h6>
-            <span>2014 - 2016</span>
-            <p>This is a description of your work experience. Concisely describe your previous position in a way that’s easy for readers to scan quickly.</p>
+            <h6>{formatMessage(messages.experienceCompany)}</h6>
+            <span>{formatMessage(messages.experienceDate)}</span>
+            <p>{formatMessage(messages.experienceDesc)}</p>
           </div>
         </div>
 
         <div id="education" className="gallery-cell">
           <div className="intro-left c6">
-            <h6>T Academy</h6>
-            <span>2016 - 2016</span>
-            <p>This is a description of your education. Concisely describe your certifiate, degree or course in a way that’s easy for readers to scan quickly.</p>
+            <h6>{formatMessage(messages.educationName1)}</h6>
+            <span>{formatMessage(messages.educationDate1)}</span>
+            <p>{formatMessage(messages.educationDesc1)}</p>
           </div>
 
           <div className="intro-left c6">
-            <h6>JAVA</h6>
-            <span>2015 - 2015</span>
-            <p>This is a description of your education. Concisely describe your certifiate, degree or course in a way that’s easy for readers to scan quickly.</p>
+            <h6>{formatMessage(messages.educationName2)}</h6>
+            <span>{formatMessage(messages.educationDate2)}</span>
+            <p>{formatMessage(messages.educationDesc2)}</p>
           </div>
         </div>
 
         <div id="hobby" className="gallery-cell">
           <div className="intro-left-img c3 center">
             <span className="circle"><i className="icon-video"></i></span>
-            <div className="padding-1 margin">Movie</div>
+            <div className="padding-1 margin">{formatMessage(messages.hobby1)}</div>
           </div>
 
           <div className="intro-left-img c3 center">
             <span className="circle"><i className="icon-swimming"></i></span>
-            <div className="padding-1">Swimming</div>
+            <div className="padding-1">{formatMessage(messages.hobby2)}</div>
           </div>
 
           <div className="intro-left-img c3 center">
             <span className="circle"><i className="icon-gamepad"></i></span>
-            <div className="padding-1">Game</div>
+            <div className="padding-1">{formatMessage(messages.hobby3)}</div>
           </div>
 
           <div className="intro-left-img c3 center">
             <span className="circle"><i className="icon-food"></i></span>
-            <div className="padding-1">Food</div>
+            <div className="padding-1">{formatMessage(messages.hobby4)}</div>
           </div>
         </div>
 
@@ -66,4 +94,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default injectIntl(Intro);

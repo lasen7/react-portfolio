@@ -89,13 +89,16 @@
 #intro #experience span, #intro #education span {
   font-size: 1.5em;
   padding-left: 2em;
+  padding-top: 0.3em;
   color: grey;
+  display: block;
 }
 
 #intro #experience p, #intro #education p {
   display: inline-block;
-  padding: 1em 3em 4em 3em;
+  padding: 1.5em 3em 4em 3em;
   line-height: 1.3em;
+  word-wrap: break-word;
 }
 
 .circle {
@@ -151,13 +154,15 @@
   }
 
   #intro #experience span, #intro #education span {
+    display: block;
     font-size: 1.5em;
     padding-left: 0.5em;
     color: grey;
   }  
 
   #intro #experience p, #intro #education p {
-    display: inline-block;
+    /*display: inline-block;*/
+    display: block;
     padding: 1em 0.5em 2em 0.8em;
     line-height: 1.3em;
   }  
